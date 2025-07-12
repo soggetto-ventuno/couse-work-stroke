@@ -1,0 +1,81 @@
+{
+  "timestamp": "20250629_112107",
+  "model_version": "education_demand_models_20250629_112107",
+  "dataset_shape": [
+    33221,
+    95
+  ],
+  "available_features": [
+    "year",
+    "avg_ege_paid",
+    "ege_change_prev_year",
+    "enrolled_paid",
+    "cost_of_education_rub",
+    "avg_ege_budget",
+    "enrolled_budget",
+    "gdp_per_capita_usd",
+    "gdp_usd_billion",
+    "gdp_rub_billion",
+    "inflation_rate_percent",
+    "mrot_rub",
+    "avg_salary_rub",
+    "real_salary_growth_percent",
+    "cpi_index",
+    "base_cpi",
+    "base_inflation_percent",
+    "gdp_deflator",
+    "population_million",
+    "unemployment_rate_percent",
+    "total_enrolled",
+    "enrolled_paid_university",
+    "all_enrolled_paid",
+    "university"
+  ],
+  "numeric_cols": [
+    "year",
+    "avg_ege_paid",
+    "ege_change_prev_year",
+    "enrolled_paid",
+    "cost_of_education_rub",
+    "avg_ege_budget",
+    "enrolled_budget",
+    "gdp_per_capita_usd",
+    "gdp_usd_billion",
+    "gdp_rub_billion",
+    "inflation_rate_percent",
+    "mrot_rub",
+    "avg_salary_rub",
+    "real_salary_growth_percent",
+    "cpi_index",
+    "base_cpi",
+    "base_inflation_percent",
+    "gdp_deflator",
+    "population_million",
+    "unemployment_rate_percent",
+    "total_enrolled",
+    "enrolled_paid_university",
+    "all_enrolled_paid"
+  ],
+  "target_variables": [
+    "demand_university",
+    "demand_program"
+  ],
+  "train_test_split": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "model_architecture": {
+    "layers": [
+      128,
+      64,
+      32,
+      1
+    ],
+    "activation": "relu",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 100
+  },
+  "tensorflow_version": "2.18.0"
+}
